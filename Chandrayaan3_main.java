@@ -18,4 +18,22 @@ public class Chandrayaan3_main
 		this.z = z;
 		this.direction = direction;
 	}
+	
+//	returning position of spacecraft
+	public int getX() {
+		return x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public int getZ() {
+		return z;
+	}
+
+	public String getDirection() {
+		return direction;
+	}
+
 }
