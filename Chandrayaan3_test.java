@@ -67,5 +67,12 @@ public class Chandrayaan3_test
         assertEquals(-1, spacecraft.getZ());
     }
     
+    @Test
+    public void testMoveBackward() {
+        Chandrayaan3_main spacecraft = new Chandrayaan3_main(0, 0, 0, "N");
+        spacecraft.moveBackward();
+        assertEquals(-1, spacecraft.getY());
+    }
+    
    
 }
