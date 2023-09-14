@@ -23,4 +23,11 @@ public class Chandrayaan3_test
         assertEquals(0, spacecraft.getZ());
         assertEquals("N", spacecraft.getDirection());
     }
+    
+    @Test
+    public void testMoveForwarddirN() {
+    	Chandrayaan3_main spacecraft = new Chandrayaan3_main(0, 0, 0, "N");
+        spacecraft.moveForward();
+        assertEquals(1, spacecraft.getY());
+    }
 }
