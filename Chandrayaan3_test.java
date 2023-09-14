@@ -37,4 +37,35 @@ public class Chandrayaan3_test
         spacecraft.moveForward();
         assertEquals(-1, spacecraft.getY());
     }
+    
+    
+    @Test
+    public void testMoveForwarddirE() {
+    	Chandrayaan3_main spacecraft = new Chandrayaan3_main(0, 0, 0, "E");
+        spacecraft.moveForward();
+        assertEquals(1, spacecraft.getX());
+    }
+    
+    @Test
+    public void testMoveForwarddirW() {
+    	Chandrayaan3_main spacecraft = new Chandrayaan3_main(0, 0, 0, "W");
+        spacecraft.moveForward();
+        assertEquals(-1, spacecraft.getX());
+    }
+    
+    @Test
+    public void testMoveForwarddirU() {
+    	Chandrayaan3_main spacecraft = new Chandrayaan3_main(0, 0, 0, "U");
+        spacecraft.moveForward();
+        assertEquals(1, spacecraft.getZ());
+    }
+    
+    @Test
+    public void testMoveForwarddirD() {
+    	Chandrayaan3_main spacecraft = new Chandrayaan3_main(0, 0, 0, "D");
+        spacecraft.moveForward();
+        assertEquals(-1, spacecraft.getZ());
+    }
+    
+   
 }

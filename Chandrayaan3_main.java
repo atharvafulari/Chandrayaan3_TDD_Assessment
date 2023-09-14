@@ -39,7 +39,8 @@ public class Chandrayaan3_main
 	public void moveForward() {
 		if ("N".equals(direction)) {
 			y++;
+		} else if ("S".equals(direction)) {
+			y--;
 		} 
-		
 	}
 }
