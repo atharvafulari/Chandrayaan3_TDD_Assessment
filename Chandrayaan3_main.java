@@ -67,4 +67,18 @@ public class Chandrayaan3_main
 			z++;
 		}
 	}
+	
+	public void turnLeft() {
+		if ("N".equals(direction)) {
+			direction = "W";
+		} else if ("S".equals(direction)) {
+			direction = "E";
+		} else if ("E".equals(direction)) {
+			direction = "N";
+		} else if ("W".equals(direction)) {
+			direction = "S";
+		} else if ("U".equals(direction) || "D".equals(direction)) {
+			// No change in horizontal direction
+		}
+	}
 }
