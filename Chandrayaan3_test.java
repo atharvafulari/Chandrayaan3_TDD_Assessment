@@ -81,5 +81,12 @@ public class Chandrayaan3_test
         assertEquals("W", spacecraft.getDirection());
     }
     
+    @Test
+    public void testTurnRight() {
+        Chandrayaan3_main spacecraft = new Chandrayaan3_main(0, 0, 0, "N");
+        spacecraft.turnRight();
+        assertEquals("E", spacecraft.getDirection());
+    }
+    
    
 }
