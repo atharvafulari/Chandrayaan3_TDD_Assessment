@@ -51,4 +51,20 @@ public class Chandrayaan3_main
 			z--;
 		}
 	}
+	
+	public void moveBackward() {
+		if ("N".equals(direction)) {
+			y--;
+		} else if ("S".equals(direction)) {
+			y++;
+		} else if ("E".equals(direction)) {
+			x--;
+		} else if ("W".equals(direction)) {
+			x++;
+		} else if ("U".equals(direction)) {
+			z--;
+		} else if ("D".equals(direction)) {
+			z++;
+		}
+	}
 }
