@@ -103,4 +103,12 @@ public class Chandrayaan3_main
 			// No change in vertical direction
 		}
 	}
+	
+	public void turnD() {
+		if ("N".equals(direction) || "S".equals(direction)) {
+			direction = "D";
+		} else if ("U".equals(direction) || "D".equals(direction)) {
+			// No change in vertical direction
+		}
+	}
 }
